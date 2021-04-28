@@ -1,0 +1,67 @@
+
+
+/* The navigation menu links */
+.sidenav a {
+    padding: 1rem 0 1rem 0.5rem;
+    text-decoration: none;
+    font-size: 2rem;
+    color: #818181;
+    display: block;
+}
+
+@media only screen and (min-width: 600px) {
+    .sidenav {
+        height: 100%; /* Full-height: remove this if you want "auto" height */
+        width: 3rem; /* Set the width of the sidebar */
+        position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+        z-index: 1; /* Stay on top */
+        top: 0; /* Stay at the top */
+        right: 0;
+        background-color: #222; /* Black */
+        overflow-x: hidden; /* Disable horizontal scroll */
+        padding-top: 0.1rem;
+        border-top-left-radius: 1rem;
+        border-bottom-left-radius: 1rem;
+    }
+    .sidenav
+    content {
+        position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+        bottom: 0; /* Stay at the top */
+    }
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+@media only screen and (max-width: 600px) {
+    .sidenav {
+        width: 100%; /* Full-height: remove this if you want "auto" height */
+        height: 3rem; /* Set the width of the sidebar */
+        position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+        z-index: 1; /* Stay on top */
+        top: 0; /* Stay at the top */
+        background-color: #222; /* Black */
+        overflow-y: hidden; /* Disable vertical scroll */
+        padding-top: 0.1rem;
+        border-bottom-right-radius: 1rem;
+        border-bottom-left-radius: 1rem;
+        position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+        z-index: 1; /* Stay on top */
+        top: 0; /* Stay at the top */
+        right: 0;
+        background-color: #222; /* Black */
+        overflow-x: hidden; /* Disable horizontal scroll */
+        padding-top: 0.1rem;
+        border-top-left-radius: 1rem;
+        border-bottom-left-radius: 1rem;
+    }
+    .sidenav
+    content {
+        float: right;
+        top: 0;
+        margin-right: 1rem;
+        margin-top: -0.7rem;
+    }
+}
