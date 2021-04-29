@@ -6,7 +6,7 @@
 }
 
 .card {
-    background-color: #224;
+    background-color: var(--color-card);
     border-radius: 1.5rem;
     position: relative;
     top: 0;
@@ -17,6 +17,9 @@
     margin-left: 1rem;
     margin-top: 1rem;
     min-width: 10rem;
+    padding-bottom: 1rem;
+
+    color: var(--color-card-text);
 }
 
 .card p {
@@ -27,6 +30,17 @@
 .card:hover {
     top: -10px;
     transform: scale(1.05);
+}
+
+.card a {
+  transition: 0.25s;
+  text-decoration: underline;
+  text-decoration-color: transparent;
+  margin-bottom: 0.5rem;
+}
+
+.card:hover a { 
+  text-decoration-color: var(--color-card-text);
 }
 
 .card h2 {
@@ -41,3 +55,13 @@
 }
 
 
+@media only screen and (max-width: 600px) {
+  .card {
+    margin-top: 20rem;
+  }
+}
+
+.link {
+  font-size: 1.5rem;
+  font-weight: bold;
+}

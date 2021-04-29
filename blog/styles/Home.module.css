@@ -13,16 +13,22 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  
+}
+
+.page {
+  height: 100vh;
 }
 
 .footer {
   width: 100%;
-  height: 100px;
+  height: 5rem;
   border-top: 1px solid #eaeaea;
   display: flex;
   justify-content: left;
   align-items: center;
+  position: absolute;
+  flex-shrink: -5rem;
+  margin-top: 3rem;
 }
 
 .footer p {
@@ -41,7 +47,7 @@
 }
 
 .description a {
-  color: #0070f3;
+  color: var(--color-text-secondary);
   text-decoration: none;
 }
 
