@@ -18,14 +18,17 @@
     margin-top: 1rem;
     min-width: 10rem;
     padding-bottom: 1rem;
-
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     color: var(--color-card-text);
+    min-height: 30rem;
 }
 
 .card p {
     padding-left: 0.5rem;
     padding-right: 0.5rem;
 }
+
+
 
 .card:hover {
     top: -10px;
@@ -37,6 +40,7 @@
   text-decoration: underline;
   text-decoration-color: transparent;
   margin-bottom: 0.5rem;
+  vertical-align:bottom;
 }
 
 .card:hover a { 
@@ -58,6 +62,7 @@
 @media only screen and (max-width: 600px) {
   .card {
     margin-top: 20rem;
+    min-height: 5em
   }
 }
 

@@ -1,11 +1,9 @@
 import Head     from 'next/head'
 import styles   from '../../styles/Home.module.css'
 import Footer   from '../../components/footer'
-import Hand     from '../../components/hand'
 import Layout   from '../../components/layout'
-import Sparkles from '../../components/sparkle'
 import Socials  from '../../components/socials'
-import Projects from '../../components/projects'
+import Back     from '../../components/back'
 
 export default function Project() {
   return (
@@ -18,10 +16,12 @@ export default function Project() {
           </Head>
           <Socials />
           <main className={styles.main}>
+            <Back />
             <h1>Test project</h1>
           </main>
         </div>
       </div>
+      <Footer />
     </Layout>
   )
 }

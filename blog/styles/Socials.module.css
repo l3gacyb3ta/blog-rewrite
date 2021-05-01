@@ -32,6 +32,7 @@
       transform: rotate(90deg);
       margin-left: -0.9rem;
       margin-top: 0.7rem;
+      margin-bottom: 0.7rem;
     }
 }
 
@@ -45,7 +46,7 @@
         width: 100%; /* Full-height: remove this if you want "auto" height */
         height: 3rem; /* Set the width of the sidebar */
         position: fixed; /* Fixed Sidebar (stay in place on scroll) */
-        z-index: 1; /* Stay on top */
+        z-index: 10; /* Stay on top */
         top: 0; /* Stay at the top */
         background-color: var(--color-bg-toggle); /* Black */
         overflow-y: hidden; /* Disable vertical scroll */

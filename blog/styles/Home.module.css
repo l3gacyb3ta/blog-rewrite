@@ -58,9 +58,9 @@
 }
 
 .title {
-  
   line-height: 1.15;
   font-size: 3rem;
+  font-family: 'VT323', monospace;
 }
 
 .title,
