@@ -9,14 +9,14 @@ function Error({ statusCode }) {
   return (
 		<Layout>
       <Head> 
-        <title>Error {statusCode}</title>
+        <title>Error ${statusCode}</title>
       </Head>
 			<div className={styles.container}>
 				<div className={styles.page}>
 				<Socials />
 					<main className={styles.main}>
 					<Back />
-						<h1>Error {statusCode}</h1>
+						<h1>Error ${statusCode}</h1>
 					</main>
 				</div>
 			</div>

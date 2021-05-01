@@ -8,9 +8,6 @@ import Socials  from '../components/socials'
 import Projects from '../components/projects'
 import { useRouter } from "next/router"
 
-
-
-
 export default function Home() {
   const router = useRouter()
   return (
