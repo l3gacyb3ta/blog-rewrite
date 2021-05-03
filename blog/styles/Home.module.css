@@ -130,3 +130,9 @@
     flex-direction: column;
   }
 }
+
+@media (min-width: 600px) {
+  .main {
+    padding-right: 2rem;
+  }
+}
