@@ -1,0 +1,24 @@
+.spotify {
+    background-color: var(--color-card);
+    color: var(--color-card-text);
+    border-radius: 1rem;
+    padding: 1rem;
+    margin: 1rem;
+    display: inline-block;
+    transition: all ease 0.5s;
+    align-content: center;
+}
+
+.spotify:hover {
+    top: -1rem;
+}
+
+.spotify img {
+    height: 4rem;
+    float: right;
+}
+
+.spotify h2 {
+    font-size: 1.25rem;
+    float: left;
+}
