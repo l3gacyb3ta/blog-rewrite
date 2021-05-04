@@ -24,11 +24,12 @@
   height: 5rem;
   border-top: 1px solid #eaeaea;
   display: flex;
-  justify-content: left;
+  justify-content: center;
   align-items: center;
   position: absolute;
   flex-shrink: -5rem;
   margin-top: 3rem;
+  padding: 1rem;
 }
 
 .footer p {
