@@ -8,6 +8,8 @@ body[data-theme="light"] {
   --color-bg-toggle: #ca0096;
   --color-card-text: #ffffff;
   --color-card: #ca0096;
+  --color-darker: #b40288;
+  --gradient: linear-gradient(to bottom right, #ffffff, #fae0f4, var(--color-darker));
 }
 
 body[data-theme="dark"] {
@@ -17,16 +19,19 @@ body[data-theme="dark"] {
   --color-bg-toggle: #35FF69;
   --color-card-text: #ffffff;
   --color-card: #222;
+  --color-darker: rgb(48, 233, 94);
+  --gradient: linear-gradient(to bottom right, #494947, #494e49, var(--color-darker));
 }
 
 html,
 body {
+  background-image: var(--gradient);
   margin: 0;
   font-family: 'Source Code Pro', monospace, sans-serif;
   background-color: var(--color-bg-primary);
   color: var(--color-text-primary);
   margin-right: rem;
-  padding: 5rem 0;
+
   flex: 1;
   display: flex;
   flex-direction: column;
