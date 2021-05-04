@@ -1,14 +1,19 @@
 import useSWR from 'swr'
 
-function Spotify() {
-    const { data, error } = useSWR('https://spotapi.arbee.repl.co/', fetch)
-    
-    if (error) return <div>failed to load</div>
-    if (!data) return <div>loading...</div>
-    let json = data.json()
-    console.log(json)
-    return <div>: {data.title}</div>
+const fetcher = (...args) => fetch(...args).then(res => res.json())
 
+function spotidata () {
+  const { data, error } = useSWR('/api/user/123', fetcher)
+
+  if (error) return <div>failed to load</div>
+  if (!data) return <div>loading...</div>
+
+  // render data
+  return <div>hello {data.title}!</div>
 }
 
-export default Spotify;
+export default function Spotify (){
+  return (
+    spotidata()
+  )
+}
