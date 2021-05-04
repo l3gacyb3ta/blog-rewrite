@@ -7,10 +7,14 @@
     display: inline-block;
     transition: all ease 0.5s;
     align-content: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    -webkit-transition: all 0.5s ease-out;
+    -moz-transition: all 0.5s ease-out;
+    -o-transition: all 0.5s ease-out;
 }
 
 .spotify:hover {
-    top: -1rem;
+    margin-top: 10px;
 }
 
 .spotify img {
