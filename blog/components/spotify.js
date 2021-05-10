@@ -24,7 +24,7 @@ function Spotidata() {
     <div className={styles.spotify}>
       <h2>Listening to: {data.title}</h2>
       <img src={data.image} alt="Cover for song."></img>
-      <Line percent={percent} strokeColor="#00ff00"/>
+      <Line percent={percent} trailWidth="0.7" strokeWidth="0.7" strokeColor="#00ff00"/>
       
     </div>
   )
