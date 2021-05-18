@@ -7,7 +7,7 @@ export default function Back() {
   const router = useRouter();
   return (
     <div aria-label="Back">
-      <FontAwesomeIcon onClick={() => router.back()} icon={faChevronLeft} className={styles.back}/>
+      <FontAwesomeIcon onClick={() => router.back()} icon={faChevronLeft} className={styles.back} />
     </div>
   )
 

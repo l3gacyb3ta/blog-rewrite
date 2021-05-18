@@ -7,7 +7,7 @@ import Link from 'next/link'
 import Date from '../components/date'
 import Socials  from '../components/socials'
 
-export default function Home({ allPostsData }) {
+export default function List({ allPostsData }) {
   return (
     <Layout>
       

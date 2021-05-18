@@ -130,12 +130,20 @@
   background-color: white;
   padding: 1rem;
   border-radius: 1rem;
-
+  color: var(--color-blog-text);
   margin-top: -5rem;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .post h1 {
   text-align: center;
+}
+
+.post h2 {
+  text-align: right;
+  color: grey;
+  font-size: 1.2rem;
+  padding-bottom: 0.5rem
 }
 
 @media (max-width: 600px) {

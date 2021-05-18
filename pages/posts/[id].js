@@ -1,14 +1,14 @@
-import Head     from 'next/head'
-import styles   from '../../styles/Home.module.css'
-import Footer   from '../../components/footer'
-import Layout   from '../../components/layout'
-import Socials  from '../../components/socials'
-import { useRouter } from "next/router"
+import Head from 'next/head'
+import styles from '../../styles/Home.module.css'
+import Footer from '../../components/footer'
+import Layout from '../../components/layout'
+import Socials from '../../components/socials'
+
+
 import { getAllPostIds, getPostData } from '../../lib/posts'
 
 export default function Post({ postData }) {
-  const router = useRouter()
-  console.log(postData)
+
   return (
     <Layout>
       <Head>
@@ -19,16 +19,19 @@ export default function Post({ postData }) {
 
       <div className={styles.container}>
         <div className={styles.page}>
-        <div className={styles.post}>
+          <div className={styles.post}>
             <h1> {postData.title} </h1>
-            <hr /> <br />
-            <time>
-              <Date dateString={postData.date} />
-            </time>
             <br />
+            <h2>
+              <time>
+                <Date dateString={postData.date} />
+              </time>
+              <br />
             Author: {postData.author}
+            </h2>
+            <hr /> 
             <main dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
-        </div>
+          </div>
         </div>
       </div>
 
