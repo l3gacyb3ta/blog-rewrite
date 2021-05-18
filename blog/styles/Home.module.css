@@ -125,15 +125,35 @@
   height: 1em;
 }
 
+.post {
+  margin: 2rem;
+  background-color: white;
+  padding: 1rem;
+  border-radius: 1rem;
+
+  margin-top: -5rem;
+}
+
+.post h1 {
+  text-align: center;
+}
+
 @media (max-width: 600px) {
   .grid {
     width: 100%;
     flex-direction: column;
+  }
+  
+  .post {
+    margin-right: 1rem;
   }
 }
 
 @media (min-width: 600px) {
   .main {
     padding-right: 2rem;
+  }
+  .post {
+    margin-right: 5rem;
   }
 }

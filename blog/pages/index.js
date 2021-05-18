@@ -41,7 +41,6 @@ export default function Home() {
         <Projects />
       </div >
       <Footer>
-          <Spotify />
       </Footer>
 
     </Layout >
