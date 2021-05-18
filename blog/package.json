@@ -14,14 +14,10 @@
     "styled-components": "^5.2.3",
     "swr": "^0.5.5"
   },
+  
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start"
-  },
-  "browser": { 
-    "fs": false,
-    "path": false,
-    "os": false
   }
 }
