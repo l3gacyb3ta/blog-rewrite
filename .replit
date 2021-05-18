@@ -1,2 +1,2 @@
 language = "nodejs"
-run = "cd blog && npm run dev"
+run = "cd blog && yarn dev"
